@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Box</title>
+    <style>
+        /* Center everything on the screen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        /* 1. Create the box styling */
+        .spinning-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 8px;
+            
+            /* 2. Apply the animation */
+            animation: spin 2s linear infinite;
+        }
+
+        /* 3. Define the spinning effect */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The HTML Box -->
+    <div class="spinning-box"></div>
+
+</body>
+</html>

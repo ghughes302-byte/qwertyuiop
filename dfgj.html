@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Fun zone</title>
+<style>
+    html{color:rgb(255, 255, 255);
+    background-color: rgb(8, 8, 8);
+}
+.p{font-size:5px; color: rgb(235, 229, 229);
+  position:flex
+}
+#button:hover{cursor:pointer}
+    
+</style>
+</head>
+<body>
+<div class="p">Fun zone</div><hr>
+<p id="buttosn">Welcome to my webpage</p>
+
+<p>My name is Gary</p>
+
+<p id="w">My name is Gary</p>
+<p id="button">Click for fun, flashing light warning</p>
+
+<script>
+    
+    let in1=Math.random()*255
+    let in2=Math.random()*255
+    let in3=Math.random()*255
+    const elementan=document.querySelector('#button')
+    elementan.addEventListener('click', function a(){
+        elementan.textContent="why click me lolz"
+        elementan.style.background="rgb("+in1+","+in2+","+in3+")"
+                elementan.style.width="fit-content"
+                        elementan.style.padding="0.5vw"
+                                                elementan.style.borderRadius="0.5rem"
+                                                elementan.style.outline="0.5vw solid #0F0F0F"
+        random()
+
+
+
+    }
+    )
+    let font=100
+    let frame=0
+    let whatdirection=1
+    setInterval(d,10)
+    function d(){
+        frame++
+        if (whatdirection===1){//font=font*1+font/8
+            }//else{font--}
+        if (font>100){whatdirection=0}
+        if (font<25){whatdirection=1}
+    const elements = document.querySelectorAll('.p');
+ elements.forEach(el => {
+            el.style.fontSize = font + "px"; 
+        });
+        const elem2 = document.querySelectorAll('[id="w"]');
+         elem2.forEach(el => {            el.innerHTML=frame/100 +  ' seconds <br> wasted on this websites<br><br><br><img src=image/ball.png>'
+//el.style.userSelect = 'none';
+})
+
+
+    
+    
+    }
+function random(){
+     in1=Math.random()*255
+     in2=Math.random()*255
+     in3=Math.random()*255
+             elementan.style.background="rgb("+in1+","+in2+","+in3+")"
+                  in1=Math.random()*255
+     in2=Math.random()*255
+     in3=Math.random()*255
+             document.body.style.background="rgb("+in1+","+in2+","+in3+")"
+
+    requestAnimationFrame(random)
+}
+
+
+
+</script>
+</body>
+</html>
